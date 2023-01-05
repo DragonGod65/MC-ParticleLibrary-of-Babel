@@ -1,5 +1,5 @@
 {
   "textures": [
-    "fp_lib:light_gray_flash"
+    "fp_lib/flashs:light_gray_flash"
   ]
 }

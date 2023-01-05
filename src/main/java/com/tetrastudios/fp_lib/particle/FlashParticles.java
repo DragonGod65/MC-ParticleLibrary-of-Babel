@@ -2,6 +2,7 @@ package com.tetrastudios.fp_lib.particle;
 
 import com.tetrastudios.fp_lib.FP_lib;
 import net.fabricmc.fabric.api.particle.v1.FabricParticleTypes;
+import net.minecraft.client.particle.FlameParticle;
 import net.minecraft.particle.DefaultParticleType;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
@@ -23,6 +24,8 @@ public class FlashParticles {
     public static final DefaultParticleType GRAY_FLASH = FabricParticleTypes.simple();
     public static final DefaultParticleType LIGHT_GRAY_FLASH = FabricParticleTypes.simple();
     public static final DefaultParticleType WHITE_FLASH = FabricParticleTypes.simple();
+
+
 
 
 

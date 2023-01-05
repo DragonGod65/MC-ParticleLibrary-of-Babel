@@ -9,9 +9,9 @@ import net.minecraft.particle.DefaultParticleType;
 public class CitrineFactory extends SpriteBillboardParticle {
 
 
-    protected CitrineFactory(ClientWorld level, double xCoord, double yCord, double zCoord,
+    protected CitrineFactory(ClientWorld level, double xCoord, double yCoord, double zCoord,
                              SpriteProvider spriteSet, double xd, double yd, double zd) {
-        super(level, xCoord, yCord, zCoord, xd, yd, zd);
+        super(level, xCoord, yCoord, zCoord, xd, yd, zd);
 
         this.velocityMultiplier = 0.6f;
         this.x = xd;
@@ -24,9 +24,6 @@ public class CitrineFactory extends SpriteBillboardParticle {
         this.red = 1f;
         this.green = 1f;
         this.blue = 1f;
-
-
-
 
     }
 
