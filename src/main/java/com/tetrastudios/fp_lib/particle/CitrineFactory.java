@@ -6,11 +6,11 @@ import net.minecraft.client.particle.*;
 import net.minecraft.client.world.ClientWorld;
 import net.minecraft.particle.DefaultParticleType;
 
-public class CitrineParticle extends SpriteBillboardParticle {
+public class CitrineFactory extends SpriteBillboardParticle {
 
 
-    protected CitrineParticle(ClientWorld level, double xCoord, double yCord, double zCoord,
-                              SpriteProvider spriteSet, double xd, double yd, double zd) {
+    protected CitrineFactory(ClientWorld level, double xCoord, double yCord, double zCoord,
+                             SpriteProvider spriteSet, double xd, double yd, double zd) {
         super(level, xCoord, yCord, zCoord, xd, yd, zd);
 
         this.velocityMultiplier = 0.6f;
@@ -55,7 +55,7 @@ public class CitrineParticle extends SpriteBillboardParticle {
 
         public Particle createParticle(DefaultParticleType particleType, ClientWorld level,
                                        double x, double y, double z, double dx, double dy, double dz) {
-            return new CitrineParticle(level, x, y,z, this.sprites, dx, dy, dz);
+            return new CitrineFactory(level, x, y,z, this.sprites, dx, dy, dz);
         }
     }
 }

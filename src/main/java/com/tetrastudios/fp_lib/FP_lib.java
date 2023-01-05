@@ -1,6 +1,7 @@
 package com.tetrastudios.fp_lib;
 
-import com.tetrastudios.fp_lib.particle.costum.NewParticles;
+import com.tetrastudios.fp_lib.particle.FlashParticles;
+import com.tetrastudios.fp_lib.particle.costum.CustomParticleLoader;
 import net.fabricmc.api.ModInitializer;
 
 import java.util.logging.LogManager;
@@ -13,7 +14,8 @@ public class FP_lib implements ModInitializer {
 
     @Override
     public void onInitialize() {
-        NewParticles.registerParticles();
+        CustomParticleLoader.registerParticles();
+        FlashParticles.registerParticles();
 
     }
 }

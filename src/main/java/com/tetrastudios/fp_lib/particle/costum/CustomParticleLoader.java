@@ -6,11 +6,11 @@ import net.minecraft.particle.DefaultParticleType;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
-public class NewParticles {
+public class CustomParticleLoader {
     public static final DefaultParticleType CITRINE_PARTICLE = FabricParticleTypes.simple();
 
     public static void registerParticles() {
-        Registry.register(Registry.PARTICLE_TYPE, new Identifier(FP_lib.MOD_ID, "red_flash"),
+        Registry.register(Registry.PARTICLE_TYPE, new Identifier(FP_lib.MOD_ID, "citrine"),
                 CITRINE_PARTICLE);
 
     }
